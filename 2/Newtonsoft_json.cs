@@ -2,7 +2,7 @@
 using Newtonsoft.Json.Linq;
 using System;
 
-namespace CodeModules
+namespace JsonWork
 {
     internal class Program
     {
@@ -52,7 +52,10 @@ namespace CodeModules
             }";
 
             // Parse string json to JToken
+            // JToken là base class của JObject, JArray, JValue, dùng để biểu diễn Json 1 cách tổng quát
             JToken jsonData = JToken.Parse(json);
+
+            // JObject: child của JToken, hỗ trợ access các field dễ dàng hơn
             // Access field "ADDRESS_MAP" like a dict, we get a JToken
             // then get its Value as a JObject
             JObject addressMap = jsonData["ADDRESS_MAP"].Value<JObject>();
@@ -65,11 +68,12 @@ namespace CodeModules
             {
                 Console.WriteLine(k);
             }
-            
+
             // Convert with a list field
             JArray addressLocation = (JArray)jsonData["ADDRESS_MAP"]["ADDRESS_LOCATION"];
             // Traverse through the array, each item is a JToken
-            foreach (JToken item in data){
+            foreach (JToken item in data)
+            {
                 Console.Writeln((int)item["FieldID"];
             }
         }
