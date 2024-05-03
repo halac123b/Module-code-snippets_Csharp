@@ -1,5 +1,6 @@
 ﻿using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
+using System;
 
 namespace CodeModules
 {
@@ -67,6 +68,10 @@ namespace CodeModules
             
             // Convert with a list field
             JArray addressLocation = (JArray)jsonData["ADDRESS_MAP"]["ADDRESS_LOCATION"];
+            // Traverse through the array, each item is a JToken
+            foreach (JToken item in data){
+                Console.Writeln((int)item["FieldID"];
+            }
         }
     }
 }
