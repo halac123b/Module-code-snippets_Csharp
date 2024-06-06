@@ -72,9 +72,15 @@ namespace JsonWork
             // Convert with a list field
             JArray addressLocation = (JArray)jsonData["ADDRESS_MAP"]["ADDRESS_LOCATION"];
             // Traverse through the array, each item is a JToken
-            foreach (JToken item in data)
+            foreach (JToken item in addressLocation)
             {
-                Console.Writeln((int)item["FieldID"];
+                Console.Writeln($"Field ID: {(int)item["FieldID"]}";
+            }
+
+            JArray location = (JArray)jsonData["ADDRESS_MAP"]["LOCATION"];
+            foreach (JToken item in location){
+                // JToken chỉ access đc các item 1 lớp, nếu muốn access lớp con tiếp theo:
+                Console.Writeln($"Location keyword: {(string)item.SelectToken("keyword.1")}";
             }
         }
     }
