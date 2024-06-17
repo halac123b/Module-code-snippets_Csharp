@@ -60,6 +60,9 @@ namespace JsonWork
             // then get its Value as a JObject
             JObject addressMap = jsonData["ADDRESS_MAP"].Value<JObject>();
 
+            // Nếu field đó của json là 1 string, ta có thể access đc chúng ngay dưới dạng 1 string
+            // string addressMap = (string)jsonData["ADDRESS_MAP"];
+
             // Access Properties() list of a JObject
             // Then map their name to a string list
             List<string> keys = addressMap.Properties().Select(p => p.Name).ToList();
@@ -78,7 +81,8 @@ namespace JsonWork
             }
 
             JArray location = (JArray)jsonData["ADDRESS_MAP"]["LOCATION"];
-            foreach (JToken item in location){
+            foreach (JToken item in location)
+            {
                 // JToken chỉ access đc các item 1 lớp, nếu muốn access lớp con tiếp theo:
                 Console.Writeln($"Location keyword: {(string)item.SelectToken("keyword.1")}";
             }
