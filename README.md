@@ -1,8 +1,8 @@
 # Module code snippets C#
 
-<p>Folder list:</p>
-<ol>
-  <li>Basic code syntax</li>
-  <li>Newtonsoft package to interact with JSON</li>
-  <li>Work with DateTIme</li>
-</ol>
+Folder list:
+
+1. Basic code syntax
+2. **Newtonsoft** package to interact with **JSON**
+3. Work with **DateTime**
+4. Work with **Network**
