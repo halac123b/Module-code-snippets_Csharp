@@ -6,3 +6,4 @@ Folder list:
 2. **Newtonsoft** package to interact with **JSON**
 3. Work with **DateTime**
 4. Work with **Network**
+5. **Diagnostics** for performance profiler
