@@ -3,7 +3,7 @@ using System;
 
 class Program
 {
-  static void Main(string[] args)
+  static void Module1(string[] args)
   {
     // Verbatim string allow not need to escape special character
     string fileName = @"C:\file.txt";
