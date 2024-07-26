@@ -1,9 +1,4 @@
-# Basic code syntax C#
+# System.Threading - package giúp sử dụng multi-threading
 
-<p>Syntax list:</p>
-<ol>
-  <li>lock statement</li>
-  <li>Monitor class</li>
-  <li>StreamWriter class, to write into file and string</li>
-  <li>StreamReader class, to read from file and string</li>
-</ol>
+1. lock statement
+2. Monitor class

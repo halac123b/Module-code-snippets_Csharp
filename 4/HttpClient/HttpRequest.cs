@@ -1,8 +1,7 @@
 using System.Collections.Generic;
-using UnityEngine;
 using System.Net.Http;
 
-public class HttpRequest : MonoBehaviour
+public class HttpRequest
 {
   public async void SendRequest()
   {
