@@ -1,0 +1,6 @@
+{
+    "msbuild-sdks": {
+        "_comment": "Support thêm nhiều feature mà SDK default k có",
+        "MSBuild.Sdk.Extras": "3.0.44"
+    }
+}
